@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Palashicheva_PR3"
         mc:Ignorable="d"
-        Title="Палашичева 402 Вариант 11 ПР3" Height="450" Width="800">
+        Title="Палашичева 402 Вариант 11 ПР3" Height="450" Width="800" Background="#FFC2C4E4">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -18,13 +18,20 @@
             <RowDefinition Height="80*"/>
             <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Content="Введите значение a"/>
-        <TextBox x:Name="A" Grid.Column="1" Margin="0,6,6,6"/>
-        <Label Grid.Row="1" Content="Введите значение b" Margin="0,6,0,0"/>
-        <TextBox x:Name="B" Grid.Column="1" Grid.Row="1" Margin="0,6,0,0"/>
-        <Label Grid.Row="2" Content="Введите значение c" Margin="0,6,0,0"/>
-        <TextBox x:Name="C" Grid.Column="1" Grid.Row="2" Margin="0,6,0,0"/>
-        <TextBox x:Name="Itog" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,46,0,0" Grid.RowSpan="2"/>
-        <Button x:Name="Schet" Grid.Column="1" Grid.Row="5" Content="Выполнить" Click="Schet_Click"/>
+        <Label Grid.Row="0" Content="Введите значение a" FontSize="16" FontWeight="Bold" Foreground="#FF480E59"/>
+        <TextBox x:Name="A" Grid.Column="1" Margin="0,6,6,6" Background="#FFE9E1EC" FontSize="14"/>
+        <Label Grid.Row="1" Content="Введите значение b" Margin="0,6,0,0" FontSize="16" FontWeight="Bold" Foreground="#FF480E59"/>
+        <TextBox x:Name="B" Grid.Column="1" Grid.Row="1" Margin="0,6,0,0" Background="#FFE9E1EC" FontSize="14"/>
+        <Label Grid.Row="2" Content="Введите значение c" Margin="0,6,0,0" FontSize="16" FontWeight="Bold" Foreground="#FF480E59"/>
+        <TextBox x:Name="C" Grid.Column="1" Grid.Row="2" Margin="0,6,0,0" Background="#FFE9E1EC" FontSize="14"/>
+        <TextBox x:Name="Itog" Grid.ColumnSpan="2" Grid.Row="3" Margin="0,10,0,0" Background="#FFE9E1EC" FontStyle="Italic" FontSize="14"/>
+        <Button x:Name="Schet" Grid.Column="1" Grid.Row="5" Content="Выполнить" Click="Schet_Click" FontSize="16" FontWeight="Bold" Foreground="#FF480E59">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFACA9FF" Offset="0"/>
+                    <GradientStop Color="#FF54BEC9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
